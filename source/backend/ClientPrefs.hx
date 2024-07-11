@@ -102,6 +102,7 @@ import states.TitleState;
 	public var fadeTransition:Bool = true;
 	public var timeTxt:Bool = true;
 	public var accuraryStyle:String = 'Judgement';
+	public var zeroPercentHealth:Bool = true;
 	public var leftToRightBar:Bool = true;
 	public var betterCutscene:Bool = true;
 	public var gameplaySettings:Map<String, Dynamic> = [

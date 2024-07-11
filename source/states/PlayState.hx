@@ -2590,7 +2590,7 @@ class PlayState extends MusicBeatState
 			health = 0;
 			TraceText.makeTheTraceText("RESET = True");
 		}
-		doDeathCheck();
+		if (ClientPrefs.data.zeroPercentHealth) doDeathCheck();
 
 		if (unspawnNotes[0] != null)
 		{

@@ -142,11 +142,11 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Random Watermark Engine Names',
-			"If checked, the ingame watermark will show random names instead of just being SB Engine.", 'randomEngineNames', 'bool');
+			"If checked, makes to show random username on watermark instead to show SB only.", 'randomEngineNames', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Score text',
-			"If unchecked, hides the score text.", 'scoreText', 'bool');
+			"If unchecked, hides score text.", 'scoreText', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Score Text Zoom on Hit',
@@ -170,7 +170,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			['Original', 'With Misses', 'Better Judge']);
 		addOption(option);
 
-		var option:Option = new Option('Time Bar',
+		var option:Option = new Option('Time bar',
 			"If unchecked, hides time bar.", 'timeBar', 'bool');
 		addOption(option);
 
@@ -191,7 +191,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Opponent Note glow',
-			"If unchecked, disables note glow for opponent side.", 'opponentArrowGlow', 'bool');
+			"If unchecked, disables note glow for boyfriend side.", 'opponentArrowGlow', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Text Sine Effect',
@@ -203,7 +203,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Time bar opponent color',
-			"If checked, the time bar's color will be from the opponent's Health Bar color instead of being purple.", 'opponentHealthColor', 'bool');
+			"If checked, enables color from opponent health instead of purple.", 'opponentHealthColor', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Autoplay text on time bar',
@@ -215,7 +215,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 	
 		var option:Option = new Option('Original FNF HP Bar',
-			"If checked, the health bar will use Red & Green as the global colors..\nUncheck this if you prefer the old current custom RGB color.", 'originalHPBar', 'bool');
+			"If checked, it should show the original game HP bar color: red and lime.\nUncheck this if you prefer the old current custom RGB color.", 'originalHPBar', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Smooth health',
@@ -262,8 +262,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			"If checked, shows the song percent.", 'songPercentage', 'bool');
 		addOption(option);
 
-		var option:Option = new Option('Reverse Time Bar Direction',
-			"If unchecked, the Time Bar will go right to left instead of left to right.\nThis option can help for time left option for better experience", 'leftToRightBar', 'bool');
+		var option:Option = new Option('Die at 0% perent of health',
+			"If unchecked, character cannot die when reachs to 0% percent of health\nNOTE: This option is literally a cheating for noobs!.", 'zeroPercentHealth', 'bool');
+		addOption(option);
+
+		var option:Option = new Option('Time bar left to right method',
+			"If unchecked, makes your bar goes right to left instead goes left to right.\nThis option can help for time left option for better experience", 'leftToRightBar', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('Better cutscenes',

@@ -17,8 +17,8 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		option.onChange = onChangeFPSCounter;
 
-		var option:Option = new Option('FPS Counter Size:', 
-			'Resize the FPS Counter for better experience.\nNOTE: This can be helpful for the phone screen resolution problem.',
+		var option:Option = new Option('FPS Counter size:', 
+			'Resize the FPS Counter for better experience.\nNOTE: This can be helpful for phone screen resoultion problem with OpenFL.',
 			'fpsResize',
 			'float');
 		option.scrollSpeed = 2;
@@ -44,8 +44,8 @@ class VisualsUISubState extends BaseOptionsMenu
 			'If checked, enables rainbow FPS.', 'rainbowFPS', 'bool');
 		addOption(option);
 
-		var option:Option = new Option('Red text on low framerate',
-			"If unchecked, the FPS Counter won't turn red if your framerate is low.", 'redText', 'bool');
+		var option:Option = new Option('Red text on lowest framerate',
+			'If unchecked, disables red color when you had an lowest frame rate.', 'redText', 'bool');
 		addOption(option);
 
 		var option:Option = new Option('In-game logs',
@@ -54,15 +54,15 @@ class VisualsUISubState extends BaseOptionsMenu
 			"bool");
 		addOption(option);
 
-		var option:Option = new Option('Engine Watermark',
-			"If unchecked, hides the watermark on the bottom right corner.",
+		var option:Option = new Option('Watermark on right down corner',
+			"Uncheck this if you dont want to see watermark icon",
 			'watermarkIcon',
 			'bool');
 		addOption(option);
 		option.onChange = onWatermarkIcon;
 
 		var option:Option = new Option('Watermark size:', 
-			'Resize the watermark icon for better experience.\nNOTE: This can be helpful for the phone screen resolution problem.',
+			'Resize the watermark icon for better experience.\nNOTE: This can be helpful for phone screen resoultion problem with OpenFL.',
 			'iconResize',
 			'float');
 		option.scrollSpeed = 2;
@@ -98,13 +98,13 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.onChange = onChangeAutoPause;
 
 		var option:Option = new Option('Velocity background', 
-		    'If unchecked, disables the velocity background for optimization.', 'checkerboard', 'bool');
+		    'If unchecked, this option is disabling velocity background for optimization.', 'checkerboard', 'bool');
 		addOption(option);
 		option.onChange = onChangeChecker;
 
 		#if SHOW_LOADING_SCREEN
 		var option:Option = new Option('Loading screen', 
-		    'If unchecked, disables the loading screen and switches to title menu instead.\nNOTE: Toggling this options requires the game restart!', 'loadingScreen', 'bool');
+		    'If unchecked, disables the loading screen and switch to title menu instead.\nNOTE: Enabling / disabling this options requires the game restart!', 'loadingScreen', 'bool');
 		addOption(option);
 		#end
 
