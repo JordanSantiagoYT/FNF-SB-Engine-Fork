@@ -71,7 +71,7 @@ class ModsMenuState extends MusicBeatState
 		visibleWhenNoMods.push(noModsTxt);
 		add(noModsTxt);
 
-		modEditorTxt = new FlxText(400, 665, FlxG.width - 800, #if android "Tap on E button to enter on master editor menu." #else "Press 7 to enter on master editor menu." #end, 32);
+		modEditorTxt = new FlxText(400, 645, FlxG.width - 800, #if android "Tap on E button to enter on master editor menu." #else "Press 7 to enter on master editor menu." #end, 32);
 		modEditorTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		modEditorTxt.scrollFactor.set();
 		modEditorTxt.borderSize = 2;
